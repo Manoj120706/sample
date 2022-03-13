@@ -1,3 +1,33 @@
 hello
+package com.company;
+
+class outer{
+
+   static   class inner{
+        int age;
+          public inner(int age){
+              this.age=age;
+          }
+        public void show(){
+            System.out.println(" hey i am inner class method ");
+        }
+
+    }
+
+    public static void main(String[] args) {
+        inner o=new inner(17);
+        System.out.println( o.age);
+        o.show();
+    }
+}
+class  main{
+    public static void main(String[] args) {
+
+
+        outer.inner ut=new outer.inner(17);
+           ut.show();
+        System.out.println(ut);
+    }
+}
 
 
